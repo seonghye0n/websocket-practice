@@ -21,11 +21,11 @@ spring:
         format_sql: true
       default_batch_fetch_size: 100
     open-in-view: true
-#    defer-datasource-initialization: true
-#  sql:
-#    init:
-#      data-locations: classpath:h2/data.sql
-#      mode: always
+    defer-datasource-initialization: true
+  sql:
+    init:
+      data-locations: classpath:h2/data.sql
+      mode: always
 
 my-env:
   jwt:
