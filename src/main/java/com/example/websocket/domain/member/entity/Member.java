@@ -1,4 +1,4 @@
-package com.example.websocket.domain;
+package com.example.websocket.domain.member.entity;
 
 import java.time.LocalDateTime;
 import javax.persistence.Column;
