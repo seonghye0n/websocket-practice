@@ -34,7 +34,8 @@ public class SecurityConfig {
         http.formLogin().disable();
         http.anonymous().disable();
 
-        http.authorizeHttpRequests(authorize -> authorize.anyRequest().permitAll());
+        http.authorizeHttpRequests(authorize ->
+            authorize.anyRequest().permitAll());
 
         return http.build();
     }

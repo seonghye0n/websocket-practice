@@ -30,7 +30,7 @@ public class JwtTokenProvider {
 
     public static boolean validateToken(String token) {
         try {
-            Claims claims = Jwts.parser().setSigningKey(SECRET).parseClaimsJwt(token).getBody();
+            Claims claims = Jwts.parser().setSigningKey(SECRET).parseClaimsJws(token).getBody();
 
             return true;
         } catch (Exception e) {
